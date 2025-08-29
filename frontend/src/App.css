@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgb(3, 0, 31);
+}
+
+.App{
+    min-height: 100vh;
+    display: flex;
+}
+
+.sideBar{
+    flex: 3;
+    border-right:1px solid rgb(100, 100, 100); ;
+}
+
+.main{
+    flex: 8;
+}
+
+.brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.logo{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.upperSide{
+    padding: 2.5rem;
+    border-right:1px solid rgb(100, 100, 100); 
+    height: 70%;
+}
+
+.upperSideTop{
+    display: flex;
+    align-items: center;
+}
+
+.addBtn{
+    height: 2rem;
+    padding-right:1rem ;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+.midBtn{
+    background: #5a4Bff;
+    border: none;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 550;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid #5a4Bff;
+    transition: 0.3s ease;
+}
+
+.midBtn:hover{
+    background: none;
+    color: #5c4efa;
+}
+
+.queries{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: rgba(222,222, 222, 0.8);
+    padding: 0.7rem;
+    width: 25rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(98, 98, 1);
+}
+
+.queries>img {
+    margin-right: 2rem;
+    object-fit: cover;
+    height: 1.75rem;
+}
+
+.queries:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main{
+    min-height: calc(100vh - 14rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 8rem;
+}
+
+.chatFooter{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inp{
+    padding: 0.5rem;
+    background: rgba(28,30,58,1);
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 70rem;
+}
+
+.inp>input{
+    width: calc(100% - 3rem);
+    outline: none;
+    padding: 1.25rem;
+    color: white;
+}
+
+.inp>input, .send {
+    background: transparent;
+    border: none;
+}
+
+.chats{
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 70rem;
+    height: calc(100vh - 17rem);
+}
+
+.chat{
+    margin: 1rem;
+    padding: 2rem 3rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.chatImg{
+    object-fit: cover;
+    width: 3.5rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
+}
+
+.bot{
+    background: rgba(28,30,58,1);
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+.botResponse {
+    background-color: rgba(28,30,58,1);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 100%;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.botResponse h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.botResponse .sql {
+    background: #1a1a2e;
+    color: #7ec3ff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    font-family: monospace;
+    font-size: 1.4rem;
+    white-space: pre-wrap;
+    margin-bottom: 2rem;
+}
+
+.resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.resultTable th, .resultTable td {
+    border: 1px solid #444;
+    padding: 1rem;
+    text-align: left;
+}
+
+.resultTable th {
+    background-color: #2c2c54;
+    color: #fff;
+}
+
+.resultTable td {
+    background-color: #1e1e3f;
+    color: #eee;
+}
+
+.resultTable tr:nth-child(even) td {
+    background-color: #26264c;
+}
+
+.chartWrapper {
+    margin-top: 8rem;
+    background: #1a1a2e;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50rem;
+}
+
+.chartWrapper h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+select {
+    padding: 6px 10px;
+    background-color: #1a1a2e;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 15px;
+    outline: none;
+    transition: 0.2s ease;
+    color: white ;
+  }
+  
+.chartInsights{
+    margin-top: 2rem;
+}
+
+.insights{
+    margin-left: 4rem;
+    padding-right: 2rem;
+}
+  
+.downloadBtn {
+    background: #5a4Bff;
+    border: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 550;
+    border-radius: 0.5rem;
+    border: 1px solid #5a4Bff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    float: right; /* key part */
+}
+
+.downloadBtn:hover {
+    background: none;
+    color: #5c4efa;
+    border-color: #5c4efa;
+}
+
+/* Smooth Slide-in Animation */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  /* Spinner loading */
+  .chat .chatImg[src*="spinner.svg"] {
+    width: 30px;
+    height: 30px;
+    margin-top: 0.5rem;
+  }
+  
+  /* Skeleton loaders */
+  .skeleton-table, .skeleton-chart {
+    background: linear-gradient(90deg, #1e1e3f 25%, #26264c 50%, #1e1e3f 75%);
+    background-size: 400% 100%;
+    animation: skeleton-loading 1.2s ease-in-out infinite;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+  
+  .skeleton-table {
+    height: 200px;
+    width: 100%;
+  }
+  
+  .skeleton-chart {
+    height: 300px;
+    width: 100%;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+  .topBar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logoutBtn {
+    background: #5a4Bff;
+    color: white;
+    border: 1px solid #5a4Bff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  
+  .logoutBtn:hover {
+    background: none;
+    border: 1px solid #d9363e;
+    color: #d9363e;
+  }
+  
+  .chatItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 25rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(98, 98, 1);
+    padding: 0.2rem 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.chatItem:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.queries {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: rgba(222,222,222, 0.8);
+    gap: 0.5rem;
+    border: none;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: left;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.2rem;
+    transition: 0.3s ease;
+}
+
+.deleteBtn img {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.7;
+}
+
+.deleteBtn:hover img {
+    opacity: 1;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .popup {
+    background: #2c2c54;
+    padding: 4rem;
+    width: 30rem;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+  
+  .popup h3{
+    margin-bottom: 2rem;
+  }
+  .popup-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .confirmBtn {
+    background: none;
+    color: #d9363e;
+    padding: 1rem 2rem;
+    border: 1.5px solid #d9363e;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .confirmBtn:hover {
+    background: #d9363e;
+    color: white;
+    transition: 0.3s ease;
+  }
+  
+  .cancelBtn {
+    background: #5c4efa;
+    color: white;
+    padding: 1rem 2.5rem;
+    border: 1.5px solid #5c4efa;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .cancelBtn:hover {
+    background: none;
+    color: #5c4efa;
+    border: 1.5px solid #5c4efa;
+    transition: 0.3s ease;
+  }
+  
