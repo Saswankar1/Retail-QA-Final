@@ -1,8 +1,4 @@
-Got it 👍 — I’ll give you the **full README.md in one continuous markdown block**, no breaks. You can copy-paste directly.
 
----
-
-```markdown
 # 🗄️ Retail Q&A Tool
 
 An **AI-powered Retail Question Answering system** that allows users to ask **natural language queries** about retail data.  
