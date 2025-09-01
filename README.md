@@ -11,7 +11,7 @@ Includes a simple login system and a chat-like interface to manage multiple quer
 
 ## Features
 - **Natural Language → SQL** conversion using **Google Gemini**  
-- 📊 **Auto chart generation** (Bar, Line, Area, Pie) with AI-generated insights  
+- **Auto chart generation** (Bar, Line, Area, Pie) with AI-generated insights  
 - 📂 **Export results to Excel**  
 - 💬 **Chat-like interface** with multiple chats and session history  
 - 🔒 **User login** system  
